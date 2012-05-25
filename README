@@ -1,0 +1,7 @@
+Basic matrix algebra implemented in C++ using operators and automatic objects
+current implementation is not re-entrant, meaning it will not support
+multiple threads using the same library, this is due to the implementation
+of automatic objects (ie matrices and vectors) using a circular buffer which
+becomes a critical region, mutual exclusion should be implemented to achieve
+re-entrance.
+
